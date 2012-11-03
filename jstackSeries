@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#
+# From http://dev.day.com/content/kb/home/cq5/CQ5SystemAdministration/TakeThreadDump.html
+#
 if [ $# -eq 0 ]; then
     echo >&2 "Usage: jstackSeries <pid> <run_user> [ <count> [ <delay> ] ]"
     echo >&2 "    Defaults: count = 10, delay = 0.5 (seconds)"

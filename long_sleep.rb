@@ -2,7 +2,7 @@
 
 require 'java'
 class RuntimeView
-  def self.display
+  def display
     rt = java.lang.Runtime.getRuntime
     puts " Free memory: #{rt.freeMemory}"
     puts "Total memory: #{rt.totalMemory}"
@@ -10,4 +10,4 @@ class RuntimeView
   end
 end
 
-RuntimeView.display
+RuntimeView.new.display
